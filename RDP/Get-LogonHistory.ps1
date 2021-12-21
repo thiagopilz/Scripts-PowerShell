@@ -1,18 +1,16 @@
 # 
-#RODAR COMANDO
+#IMP Fnction
 # . .\Get-LogonHistory.ps1
 
 # CHECK LOGS HISTORY LOCAL
 # Get-LogonHistory
 
 # Get-LogonHistory -Newest 30
-# Get-LogonHistory -ComputerName swsc01
-# Get-LogonHistory -ComputerName swmtts001
-# Get-LogonHistory -ComputerName swmtbd004 -Newest 30
-# Get-LogonHistory -ComputerName swmtts001 -Newest 30
+# Get-LogonHistory -ComputerName SERVERNAME
+# Get-LogonHistory -ComputerName SERVERNAME -Newest 30
 #ComputerName
-# Get-LogonHistory -ComputerName SWMTTS001 -Credentials Get-Credential -Newst
-# Get-LogonHistory -ComputerName SWMTTS001 -Credentials compus\tpilz
+# Get-LogonHistory -ComputerName SERVERNAME -Credentials Get-Credential -Newst
+# Get-LogonHistory -ComputerName SERVERNAME -Credentials domain\user
 
 Function Get-LogonHistory
 {
