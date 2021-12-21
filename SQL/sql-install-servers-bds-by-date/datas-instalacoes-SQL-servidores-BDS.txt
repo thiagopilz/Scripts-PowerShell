@@ -1,0 +1,100 @@
+##POWERSHELL LIBERAR EXUÇÃO SCRIPTS
+# Get-ExecutionPolicy -List
+# Set-ExecutionPolicy Unrestricted
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+##VERIFICAÇÃO DIAS A SEREM VOLTADOS PELO SCRIPTS
+# 1) VER A DATA DE INSTALAÇÃO DO SQL SERVER PELO "PROGRAMAS E RECURSOS"
+#ou PELOS ARQUIVOS QUE FORAM RESTAURADOS NO D:/SQLDADOS/
+# 2) EXECUTAR NO QUERY DO SQL O COMANDO ABAIXO COM A DATA: ex: instalação sql dia "26/03/2020"
+# select datediff(day, '26/03/2020', getdate())
+
+
+RESUMO DATA INSTALL SQL SERVER SERVIDORES
+BD001 - 21/04/2020
+BD003 - 26/03/2020
+BD004 - 29/10/2019
+BD005 - 30/04/2020
+BD006 - 18/08/2019
+BD007 - 24/01/2021 - (N TA EXPIRADO)
+BD008 - 25/08/2019
+BD011 - 01/10/2020
+
+RESUMO DIAS A VOLTAR SCRIPT
+BD001 - 356 dias
+BD003 - 382 dias
+BD004 - 531 dias
+BD005 - 347 dias
+BD006 - 603 dias
+BD007 - 24/01/2021 - (N TA EXPIRADO)
+BD008 - 596 dias
+BD011 - 193 dias
+
+
+
+
+#################################################################################
+###
+BD001
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20200421
+DATA INSTALL SQL: 21/04/2020
+# select datediff(day, '21/04/2020', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 356
+####
+
+###
+BD003
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20200326
+DATA INSTALL SQL: 26/03/2020
+# select datediff(day, '26/03/2020', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 382
+###
+
+####
+BD004
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20191029
+DATA INSTALL SQL: 29/10/2019
+# select datediff(day, '29/10/2019', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 531
+########################
+
+###
+BD005
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20200430
+DATA INSTALL SQL: 30/04/2020
+# select datediff(day, '30/04/2020', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 347
+####
+
+####
+BD006
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20190818
+DATA INSTALL SQL: 18/08/2019
+# select datediff(day, '18/08/2019', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 603
+######
+
+####
+BD007
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20210124
+DATA INSTALL SQL: 24/01/2021
+# select datediff(day, '24/01/2021', getdate())
+##############
+
+###
+BD008
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20190825
+DATA INSTALL SQL: 25/08/2019
+# select datediff(day, '25/08/2019', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 596
+###
+
+###
+BD011
+Instalação do Microsoft SQL Server 2008 R2 (Inglês)                    20201001
+DATA INSTALL SQL: 01/10/2020
+# select datediff(day, '01/10/2020', getdate())
+DIAS VOLTAR SQL - TROCAR SCRIPT = 193
+####
+#################################################################################
+
