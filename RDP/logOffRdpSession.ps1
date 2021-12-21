@@ -1,8 +1,8 @@
 #PowerShell: How to Logoff an User RDP Session
 
 #--
-$servername='swmtin004'
-$userName='tpilz'
+$servername='SERVER'
+$userName='uSERNAME'
   
 function logOffRdpSession{
     param(
@@ -46,18 +46,14 @@ function logOffRdpSession{
 }
   
 logoffRdpSession $servername $username
-#
+#--
 
-# .\logOffRdpSession.ps1
+
 #.\logOffRdpSession.ps1
 
-# https://kimconnect.com/powershell-how-to-logoff-an-user-rdp-session/
-
 #PS C:\tmp\PowerView-master\test> .\logOffRdpSession.ps1
-#tpilz RDP session ID 2 on 172.16.1.9 has been forcefully disconnected.
+#tpilz RDP session ID 2 on 172.X.X.X has been forcefully disconnected.
 #PS C:\tmp\PowerView-master\test>
 #PS C:\tmp\PowerView-master\test>
 
-# quser /server:swmtde003
-# quser /server:swmtde006
-# quser /server:swmtde007
+# quser /server:HOSTNAME
